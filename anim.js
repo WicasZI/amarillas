@@ -60,7 +60,7 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var time = Math.floor(audio.currentTime);
+  var time = Math.floor(audio.currentTime - 2);
   var currentLine = lyricsData.find(
     (line) => time >= line.time && time < line.time + 6
   );
